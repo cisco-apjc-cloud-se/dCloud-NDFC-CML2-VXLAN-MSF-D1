@@ -1,0 +1,7244 @@
+lab:
+  description: ''
+  notes: ''
+  title: VXLAN Multi-Site Fabric v1
+  version: 0.2.0
+links:
+  - id: l0
+    n1: n1
+    n2: n0
+    i1: i0
+    i2: i2
+    label: dCloud-port<->OOB-MGMT-Ethernet1/1
+  - id: l1
+    n1: n0
+    n2: n2
+    i1: i3
+    i2: i1
+    label: OOB-MGMT-Ethernet1/2<->DC1-SPINE1-mgmt0
+  - id: l2
+    n1: n0
+    n2: n3
+    i1: i4
+    i2: i1
+    label: OOB-MGMT-Ethernet1/3<->DC1-SPINE2-mgmt0
+  - id: l3
+    n1: n0
+    n2: n4
+    i1: i5
+    i2: i1
+    label: OOB-MGMT-Ethernet1/4<->DC1-LEAF1-mgmt0
+  - id: l4
+    n1: n0
+    n2: n5
+    i1: i6
+    i2: i1
+    label: OOB-MGMT-Ethernet1/5<->DC1-LEAF2-mgmt0
+  - id: l5
+    n1: n0
+    n2: n6
+    i1: i7
+    i2: i1
+    label: OOB-MGMT-Ethernet1/6<->DC1-LEAF3-mgmt0
+  - id: l6
+    n1: n0
+    n2: n7
+    i1: i8
+    i2: i1
+    label: OOB-MGMT-Ethernet1/7<->DC1-LEAF4-mgmt0
+  - id: l7
+    n1: n0
+    n2: n8
+    i1: i9
+    i2: i1
+    label: OOB-MGMT-Ethernet1/8<->DC1-ABGW1-mgmt0
+  - id: l8
+    n1: n0
+    n2: n9
+    i1: i10
+    i2: i1
+    label: OOB-MGMT-Ethernet1/9<->DC1-ABGW2-mgmt0
+  - id: l9
+    n1: n0
+    n2: n10
+    i1: i11
+    i2: i1
+    label: OOB-MGMT-Ethernet1/10<->WAN-mgmt0
+  - id: l10
+    n1: n0
+    n2: n13
+    i1: i12
+    i2: i0
+    label: OOB-MGMT-Ethernet1/11<-> V1-N1-H1-ens2
+  - id: l11
+    n1: n0
+    n2: n14
+    i1: i13
+    i2: i0
+    label: OOB-MGMT-Ethernet1/12<-> V1-N2-H1-ens2
+  - id: l12
+    n1: n0
+    n2: n15
+    i1: i14
+    i2: i0
+    label: OOB-MGMT-Ethernet1/13<-> V1-N1-H2-ens2
+  - id: l13
+    n1: n0
+    n2: n16
+    i1: i15
+    i2: i0
+    label: OOB-MGMT-Ethernet1/14<-> V2-N1-H1-ens2
+  - id: l14
+    n1: n0
+    n2: n12
+    i1: i16
+    i2: i1
+    label: OOB-MGMT-Ethernet1/15<->DC2-VBGW1-mgmt0
+  - id: l15
+    n1: n0
+    n2: n11
+    i1: i17
+    i2: i1
+    label: OOB-MGMT-Ethernet1/16<->DC2-VBGW2-mgmt0
+  - id: l16
+    n1: n0
+    n2: n17
+    i1: i18
+    i2: i0
+    label: OOB-MGMT-Ethernet1/17<-> V1-N2-H2-ens2
+  - id: l17
+    n1: n0
+    n2: n18
+    i1: i19
+    i2: i0
+    label: OOB-MGMT-Ethernet1/18<-> V2-N1-H2-ens2
+  - id: l18
+    n1: n2
+    n2: n4
+    i1: i2
+    i2: i2
+    label: DC1-SPINE1-Ethernet1/1<->DC1-LEAF1-Ethernet1/1
+  - id: l19
+    n1: n2
+    n2: n5
+    i1: i3
+    i2: i2
+    label: DC1-SPINE1-Ethernet1/2<->DC1-LEAF2-Ethernet1/1
+  - id: l20
+    n1: n2
+    n2: n6
+    i1: i4
+    i2: i2
+    label: DC1-SPINE1-Ethernet1/3<->DC1-LEAF3-Ethernet1/1
+  - id: l21
+    n1: n2
+    n2: n7
+    i1: i5
+    i2: i2
+    label: DC1-SPINE1-Ethernet1/4<->DC1-LEAF4-Ethernet1/1
+  - id: l22
+    n1: n2
+    n2: n8
+    i1: i6
+    i2: i2
+    label: DC1-SPINE1-Ethernet1/5<->DC1-ABGW1-Ethernet1/1
+  - id: l23
+    n1: n2
+    n2: n9
+    i1: i7
+    i2: i2
+    label: DC1-SPINE1-Ethernet1/6<->DC1-ABGW2-Ethernet1/1
+  - id: l24
+    n1: n3
+    n2: n4
+    i1: i2
+    i2: i3
+    label: DC1-SPINE2-Ethernet1/1<->DC1-LEAF1-Ethernet1/2
+  - id: l25
+    n1: n3
+    n2: n5
+    i1: i3
+    i2: i3
+    label: DC1-SPINE2-Ethernet1/2<->DC1-LEAF2-Ethernet1/2
+  - id: l26
+    n1: n3
+    n2: n6
+    i1: i4
+    i2: i3
+    label: DC1-SPINE2-Ethernet1/3<->DC1-LEAF3-Ethernet1/2
+  - id: l27
+    n1: n3
+    n2: n7
+    i1: i5
+    i2: i3
+    label: DC1-SPINE2-Ethernet1/4<->DC1-LEAF4-Ethernet1/2
+  - id: l28
+    n1: n3
+    n2: n8
+    i1: i6
+    i2: i3
+    label: DC1-SPINE2-Ethernet1/5<->DC1-ABGW1-Ethernet1/2
+  - id: l29
+    n1: n3
+    n2: n9
+    i1: i7
+    i2: i3
+    label: DC1-SPINE2-Ethernet1/6<->DC1-ABGW2-Ethernet1/2
+  - id: l30
+    n1: n4
+    n2: n5
+    i1: i4
+    i2: i4
+    label: DC1-LEAF1-Ethernet1/3<->DC1-LEAF2-Ethernet1/3
+  - id: l31
+    n1: n4
+    n2: n5
+    i1: i5
+    i2: i5
+    label: DC1-LEAF1-Ethernet1/4<->DC1-LEAF2-Ethernet1/4
+  - id: l32
+    n1: n6
+    n2: n7
+    i1: i4
+    i2: i4
+    label: DC1-LEAF3-Ethernet1/3<->DC1-LEAF4-Ethernet1/3
+  - id: l33
+    n1: n6
+    n2: n7
+    i1: i5
+    i2: i5
+    label: DC1-LEAF3-Ethernet1/4<->DC1-LEAF4-Ethernet1/4
+  - id: l34
+    n1: n12
+    n2: n11
+    i1: i2
+    i2: i2
+    label: DC2-VBGW1-Ethernet1/1<->DC2-VBGW2-Ethernet1/1
+  - id: l35
+    n1: n12
+    n2: n11
+    i1: i3
+    i2: i3
+    label: DC2-VBGW1-Ethernet1/2<->DC2-VBGW2-Ethernet1/2
+  - id: l36
+    n1: n8
+    n2: n9
+    i1: i4
+    i2: i4
+    label: DC1-ABGW1-Ethernet1/3<->DC1-ABGW2-Ethernet1/3
+  - id: l37
+    n1: n8
+    n2: n12
+    i1: i6
+    i2: i6
+    label: DC1-ABGW1-Ethernet1/5<->DC2-VBGW1-Ethernet1/5
+  - id: l38
+    n1: n9
+    n2: n11
+    i1: i6
+    i2: i6
+    label: DC1-ABGW2-Ethernet1/5<->DC2-VBGW2-Ethernet1/5
+  - id: l39
+    n1: n8
+    n2: n10
+    i1: i7
+    i2: i2
+    label: DC1-ABGW1-Ethernet1/6<->WAN-Ethernet1/1
+  - id: l40
+    n1: n9
+    n2: n10
+    i1: i7
+    i2: i3
+    label: DC1-ABGW2-Ethernet1/6<->WAN-Ethernet1/2
+  - id: l41
+    n1: n12
+    n2: n10
+    i1: i7
+    i2: i4
+    label: DC2-VBGW1-Ethernet1/6<->WAN-Ethernet1/3
+  - id: l42
+    n1: n11
+    n2: n10
+    i1: i7
+    i2: i5
+    label: DC2-VBGW2-Ethernet1/6<->WAN-Ethernet1/4
+  - id: l43
+    n1: n12
+    n2: n17
+    i1: i8
+    i2: i1
+    label: DC2-VBGW1-Ethernet1/7<-> V1-N2-H2-ens3
+  - id: l44
+    n1: n12
+    n2: n18
+    i1: i9
+    i2: i1
+    label: DC2-VBGW1-Ethernet1/8<-> V2-N1-H2-ens3
+  - id: l45
+    n1: n11
+    n2: n17
+    i1: i8
+    i2: i2
+    label: DC2-VBGW2-Ethernet1/7<-> V1-N2-H2-ens4
+  - id: l46
+    n1: n11
+    n2: n18
+    i1: i9
+    i2: i2
+    label: DC2-VBGW2-Ethernet1/8<-> V2-N1-H2-ens4
+  - id: l47
+    n1: n4
+    n2: n13
+    i1: i8
+    i2: i1
+    label: DC1-LEAF1-Ethernet1/7<-> V1-N1-H1-ens3
+  - id: l48
+    n1: n5
+    n2: n13
+    i1: i8
+    i2: i2
+    label: DC1-LEAF2-Ethernet1/7<-> V1-N1-H1-ens4
+  - id: l49
+    n1: n4
+    n2: n14
+    i1: i9
+    i2: i1
+    label: DC1-LEAF1-Ethernet1/8<-> V1-N2-H1-ens3
+  - id: l50
+    n1: n5
+    n2: n14
+    i1: i9
+    i2: i2
+    label: DC1-LEAF2-Ethernet1/8<-> V1-N2-H1-ens4
+  - id: l51
+    n1: n6
+    n2: n15
+    i1: i8
+    i2: i1
+    label: DC1-LEAF3-Ethernet1/7<-> V1-N1-H2-ens3
+  - id: l52
+    n1: n7
+    n2: n15
+    i1: i8
+    i2: i2
+    label: DC1-LEAF4-Ethernet1/7<-> V1-N1-H2-ens4
+  - id: l53
+    n1: n6
+    n2: n16
+    i1: i9
+    i2: i1
+    label: DC1-LEAF3-Ethernet1/8<-> V2-N1-H1-ens3
+  - id: l54
+    n1: n7
+    n2: n16
+    i1: i9
+    i2: i2
+    label: DC1-LEAF4-Ethernet1/8<-> V2-N1-H1-ens4
+nodes:
+  - boot_disk_size: null
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Aug  9 02:30:41 2023
+      !Time: Wed Aug  9 02:30:41 2023
+
+      version 10.3(1) Bios:version
+      hostname OOB-MGMT
+      vdc OOB-MGMT id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature ospf
+      feature interface-vlan
+      feature dhcp
+      feature sla sender
+
+      no password strength-check
+      username admin password 5 $5$OGPJBN$KlzGS3E1xSxjyT.qr4q0mfAlTD/DlkKzURRSl9Hx61B  role network-admin
+      username cisco password 5 $5$PAAJHJ$kMTUsQvOn80dq5QJvXqmn.cV8Jl8k/TivrCkyfspfS5  role network-admin
+      username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
+      no ip domain-lookup
+      copp profile strict
+      snmp-server user admin network-admin auth md5 21444473E6354A8DF1F33DCEFDF9574718D3 priv aes-128 17590C199EA8B52D4B42914C633483DFC705 localizedV2key
+      snmp-server user cisco network-admin auth md5 3777C3AE9C64D1A99108B43E3699F1CC1231 priv aes-128 056AE595C818F6D7C67EAD6A6EDCAEF12F4E localizedV2key
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+
+      ip route 0.0.0.0/0 198.18.128.1
+      vlan 1,101-102
+
+      service dhcp
+      ip dhcp relay
+      ipv6 dhcp relay
+      vrf context management
+
+
+      interface Vlan1
+
+      interface Vlan101
+        description *** 1st OOB Management Network ***
+        no shutdown
+        ip address 198.18.101.1/24
+        ip router ospf lab area 0.0.0.0
+        ip dhcp relay address 198.18.1.100
+
+      interface Vlan102
+        description *** 2nd OOB Management Network ***
+        no shutdown
+        ip address 198.18.102.1/24
+        ip router ospf lab area 0.0.0.0
+        ip dhcp relay address 198.18.1.100
+
+      interface Ethernet1/1
+        description *** Bridged to Default VLAN ***
+        no switchport
+        ip address 198.18.131.100/18
+        no ip ospf passive-interface
+        ip router ospf lab area 0.0.0.0
+        no shutdown
+
+      interface Ethernet1/2
+        switchport access vlan 101
+
+      interface Ethernet1/3
+        switchport access vlan 101
+
+      interface Ethernet1/4
+        switchport access vlan 101
+
+      interface Ethernet1/5
+        switchport access vlan 101
+
+      interface Ethernet1/6
+        switchport access vlan 101
+
+      interface Ethernet1/7
+        switchport access vlan 101
+
+      interface Ethernet1/8
+        switchport access vlan 101
+
+      interface Ethernet1/9
+        switchport access vlan 101
+
+      interface Ethernet1/10
+        switchport access vlan 101
+
+      interface Ethernet1/11
+        switchport access vlan 101
+
+      interface Ethernet1/12
+        switchport access vlan 101
+
+      interface Ethernet1/13
+        switchport access vlan 101
+
+      interface Ethernet1/14
+        switchport access vlan 101
+
+      interface Ethernet1/15
+        switchport access vlan 102
+
+      interface Ethernet1/16
+        switchport access vlan 102
+
+      interface Ethernet1/17
+        switchport access vlan 102
+
+      interface Ethernet1/18
+        switchport access vlan 102
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface mgmt0
+        vrf member management
+
+      interface loopback0
+        ip address 198.18.127.255/32
+        ip router ospf lab area 0.0.0.0
+
+      interface loopback1
+        ip address 198.19.255.255/32
+        ip router ospf lab area 0.0.0.0
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos64-cs.10.3.1.F.bin
+      router ospf lab
+        passive-interface default
+
+      ip sla 10
+        icmp-echo 198.18.128.1
+      ip sla schedule 10 life forever start-time now
+      no logging console
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: true
+    id: n0
+    image_definition: null
+    label: OOB-MGMT
+    node_definition: nxosv9000
+    ram: null
+    tags: []
+    x: -2120
+    y: 240
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: Ethernet1/4
+        slot: 4
+        type: physical
+      - id: i6
+        label: Ethernet1/5
+        slot: 5
+        type: physical
+      - id: i7
+        label: Ethernet1/6
+        slot: 6
+        type: physical
+      - id: i8
+        label: Ethernet1/7
+        slot: 7
+        type: physical
+      - id: i9
+        label: Ethernet1/8
+        slot: 8
+        type: physical
+      - id: i10
+        label: Ethernet1/9
+        slot: 9
+        type: physical
+      - id: i11
+        label: Ethernet1/10
+        slot: 10
+        type: physical
+      - id: i12
+        label: Ethernet1/11
+        slot: 11
+        type: physical
+      - id: i13
+        label: Ethernet1/12
+        slot: 12
+        type: physical
+      - id: i14
+        label: Ethernet1/13
+        slot: 13
+        type: physical
+      - id: i15
+        label: Ethernet1/14
+        slot: 14
+        type: physical
+      - id: i16
+        label: Ethernet1/15
+        slot: 15
+        type: physical
+      - id: i17
+        label: Ethernet1/16
+        slot: 16
+        type: physical
+      - id: i18
+        label: Ethernet1/17
+        slot: 17
+        type: physical
+      - id: i19
+        label: Ethernet1/18
+        slot: 18
+        type: physical
+      - id: i20
+        label: Ethernet1/19
+        slot: 19
+        type: physical
+  - boot_disk_size: null
+    configuration: bridge0
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: true
+    id: n1
+    image_definition: null
+    label: dCloud
+    node_definition: external_connector
+    ram: null
+    tags: []
+    x: -2120
+    y: 440
+    interfaces:
+      - id: i0
+        label: port
+        slot: 0
+        type: physical
+  - boot_disk_size: null
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Aug  9 05:06:03 2023
+      !Time: Wed Aug  9 05:06:03 2023
+
+      version 10.3(1) Bios:version
+      hostname DC1-SPINE1
+      vdc DC1-SPINE1 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature nxapi
+      nv overlay evpn
+      feature ospf
+      feature bgp
+      feature pim
+      feature lldp
+      feature nv overlay
+      feature ngoam
+
+      no password strength-check
+      username admin password 5 $5$HBAEDD$kVXzybKCSSu47T9AxQdxNwxwHveaZR8ezOUhWZ5BqF5  role network-admin
+      ip domain-lookup
+      copp profile strict
+      snmp-server user admin network-admin auth md5 204EB76F1FE3CF917A201E784D1FB9A28B70 priv aes-128 2164E92A4581BCC87A3A40600746ECF4AF5D localizedV2key
+      snmp-server host 198.18.1.11 traps version 2c public udp-port 2162
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+      no system default switchport
+
+      ipv6 switch-packets lla
+      ip pim rp-address 10.101.3.1 group-list 239.1.1.0/25
+      ip pim ssm range 232.0.0.0/8
+      ip pim anycast-rp 10.101.3.1 10.101.1.1
+      ip pim anycast-rp 10.101.3.1 10.101.1.2
+      vlan 1
+
+      vrf context management
+        ip route 0.0.0.0/0 198.18.101.1
+      ngoam install acl
+
+      nxapi http port 80
+
+
+      interface Ethernet1/1
+        description connected-to-DC1-LEAF1-Ethernet1/1
+        mtu 9216
+        ip address 10.101.4.42/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/2
+        description connected-to-DC1-LEAF2-Ethernet1/1
+        mtu 9216
+        ip address 10.101.4.18/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/3
+        description connected-to-DC1-LEAF3-Ethernet1/1
+        mtu 9216
+        ip address 10.101.4.34/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/4
+        description connected-to-DC1-LEAF4-Ethernet1/1
+        mtu 9216
+        ip address 10.101.4.26/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/5
+        description connected-to-DC1-ABGW1-Ethernet1/1
+        mtu 9216
+        ip address 10.101.4.14/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/6
+        description connected-to-DC1-ABGW2-Ethernet1/1
+        mtu 9216
+        ip address 10.101.4.50/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/7
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/8
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/9
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/10
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/11
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/12
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/13
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/14
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/15
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/16
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/17
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/18
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/19
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/20
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/21
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/22
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/23
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/24
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/25
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/26
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/27
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/28
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/29
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/30
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/31
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/32
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/33
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/34
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/35
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/36
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/37
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/38
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/39
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/40
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/41
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/42
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/43
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/44
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/45
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/46
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/47
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/48
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/49
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/50
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/51
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/52
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/53
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/54
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/55
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/56
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/57
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/58
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/59
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/60
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/61
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/62
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/63
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/64
+        mtu 9216
+        no shutdown
+
+      interface mgmt0
+        no cdp enable
+        vrf member management
+        ip address 198.18.101.2/24
+
+      interface loopback0
+        description Routing loopback interface
+        ip address 10.101.1.1/32
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface loopback254
+        description RP loopback interface
+        ip address 10.101.3.1/32
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos64-cs.10.3.1.F.bin
+      router ospf UNDERLAY
+        router-id 10.101.1.1
+      router bgp 65101
+        router-id 10.101.1.1
+        neighbor 10.101.1.3
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            route-reflector-client
+        neighbor 10.101.1.4
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            route-reflector-client
+        neighbor 10.101.1.5
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            route-reflector-client
+        neighbor 10.101.1.6
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            route-reflector-client
+        neighbor 10.101.1.7
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            route-reflector-client
+        neighbor 10.101.1.8
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            route-reflector-client
+
+      no logging console
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: DC1-SPINE1
+    node_definition: nxosv9000
+    ram: null
+    tags: []
+    x: -2520
+    y: 200
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: Ethernet1/4
+        slot: 4
+        type: physical
+      - id: i6
+        label: Ethernet1/5
+        slot: 5
+        type: physical
+      - id: i7
+        label: Ethernet1/6
+        slot: 6
+        type: physical
+      - id: i8
+        label: Ethernet1/7
+        slot: 7
+        type: physical
+      - id: i9
+        label: Ethernet1/8
+        slot: 8
+        type: physical
+      - id: i10
+        label: Ethernet1/9
+        slot: 9
+        type: physical
+      - id: i11
+        label: Ethernet1/10
+        slot: 10
+        type: physical
+      - id: i12
+        label: Ethernet1/11
+        slot: 11
+        type: physical
+  - boot_disk_size: null
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Aug  9 05:06:20 2023
+      !Time: Wed Aug  9 05:06:20 2023
+
+      version 10.3(1) Bios:version
+      hostname DC1-SPINE2
+      vdc DC1-SPINE2 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature nxapi
+      nv overlay evpn
+      feature ospf
+      feature bgp
+      feature pim
+      feature lldp
+      feature nv overlay
+      feature ngoam
+
+      no password strength-check
+      username admin password 5 $5$CHBIHL$3msmzkX2M/ddco348.ah6SNqwsV1PH1.44z.PIZAyQC  role network-admin
+      ip domain-lookup
+      copp profile strict
+      snmp-server user admin network-admin auth md5 0045A2CD067AE509FB542E15DE6C5CFA2C68 priv aes-128 375691EE6FE825DB2FE6F19840BE947EFDA3 localizedV2key
+      snmp-server host 198.18.1.11 traps version 2c public udp-port 2162
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+      no system default switchport
+
+      ipv6 switch-packets lla
+      ip pim rp-address 10.101.3.1 group-list 239.1.1.0/25
+      ip pim ssm range 232.0.0.0/8
+      ip pim anycast-rp 10.101.3.1 10.101.1.1
+      ip pim anycast-rp 10.101.3.1 10.101.1.2
+      vlan 1
+
+      vrf context management
+        ip route 0.0.0.0/0 198.18.101.1
+      ngoam install acl
+
+      nxapi http port 80
+
+
+      interface Ethernet1/1
+        description connected-to-DC1-LEAF1-Ethernet1/2
+        mtu 9216
+        ip address 10.101.4.9/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/2
+        description connected-to-DC1-LEAF2-Ethernet1/2
+        mtu 9216
+        ip address 10.101.4.22/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/3
+        description connected-to-DC1-LEAF3-Ethernet1/2
+        mtu 9216
+        ip address 10.101.4.45/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/4
+        description connected-to-DC1-LEAF4-Ethernet1/2
+        mtu 9216
+        ip address 10.101.4.53/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/5
+        description connected-to-DC1-ABGW1-Ethernet1/2
+        mtu 9216
+        ip address 10.101.4.38/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/6
+        description connected-to-DC1-ABGW2-Ethernet1/2
+        mtu 9216
+        ip address 10.101.4.30/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/7
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/8
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/9
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/10
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/11
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/12
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/13
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/14
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/15
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/16
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/17
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/18
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/19
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/20
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/21
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/22
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/23
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/24
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/25
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/26
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/27
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/28
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/29
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/30
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/31
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/32
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/33
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/34
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/35
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/36
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/37
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/38
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/39
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/40
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/41
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/42
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/43
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/44
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/45
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/46
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/47
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/48
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/49
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/50
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/51
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/52
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/53
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/54
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/55
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/56
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/57
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/58
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/59
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/60
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/61
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/62
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/63
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/64
+        mtu 9216
+        no shutdown
+
+      interface mgmt0
+        no cdp enable
+        vrf member management
+        ip address 198.18.101.3/24
+
+      interface loopback0
+        description Routing loopback interface
+        ip address 10.101.1.2/32
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface loopback254
+        description RP loopback interface
+        ip address 10.101.3.1/32
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos64-cs.10.3.1.F.bin
+      router ospf UNDERLAY
+        router-id 10.101.1.2
+      router bgp 65101
+        router-id 10.101.1.2
+        neighbor 10.101.1.3
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            route-reflector-client
+        neighbor 10.101.1.4
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            route-reflector-client
+        neighbor 10.101.1.5
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            route-reflector-client
+        neighbor 10.101.1.6
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            route-reflector-client
+        neighbor 10.101.1.7
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            route-reflector-client
+        neighbor 10.101.1.8
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            route-reflector-client
+
+      no logging console
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n3
+    image_definition: null
+    label: DC1-SPINE2
+    node_definition: nxosv9000
+    ram: null
+    tags: []
+    x: -2360
+    y: 200
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: Ethernet1/4
+        slot: 4
+        type: physical
+      - id: i6
+        label: Ethernet1/5
+        slot: 5
+        type: physical
+      - id: i7
+        label: Ethernet1/6
+        slot: 6
+        type: physical
+      - id: i8
+        label: Ethernet1/7
+        slot: 7
+        type: physical
+      - id: i9
+        label: Ethernet1/8
+        slot: 8
+        type: physical
+      - id: i10
+        label: Ethernet1/9
+        slot: 9
+        type: physical
+      - id: i11
+        label: Ethernet1/10
+        slot: 10
+        type: physical
+      - id: i12
+        label: Ethernet1/11
+        slot: 11
+        type: physical
+  - boot_disk_size: null
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Aug  9 05:06:48 2023
+      !Time: Wed Aug  9 05:06:49 2023
+
+      version 10.3(1) Bios:version
+      hostname DC1-LEAF1
+      vdc DC1-LEAF1 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature nxapi
+      cfs eth distribute
+      nv overlay evpn
+      feature ospf
+      feature bgp
+      feature pim
+      feature interface-vlan
+      feature vn-segment-vlan-based
+      feature lacp
+      feature dhcp
+      feature vpc
+      feature lldp
+      feature nv overlay
+      feature ngoam
+
+      no password strength-check
+      username admin password 5 $5$BCEIBI$0Hv9OrhunDFNYnPRgo3TtnDmS5RfxFuQkYInB4CJIr0  role network-admin
+      ip domain-lookup
+      copp profile strict
+      snmp-server user admin network-admin auth md5 041B2F40B005ADA23F0E8332DBB45C076B6C priv aes-128 040E167883CE3C3EB88745F5137891CDA0F8 localizedV2key
+      snmp-server host 198.18.1.11 traps version 2c public udp-port 2162
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+      no system default switchport
+
+      fabric forwarding anycast-gateway-mac 2020.0000.00aa
+      ipv6 switch-packets lla
+      ip pim rp-address 10.101.3.1 group-list 239.1.1.0/25
+      ip pim ssm range 232.0.0.0/8
+      vlan 1,3600
+
+      route-map fabric-rmap-redist-subnet permit 10
+        match tag 12345
+      service dhcp
+      ip dhcp relay
+      ip dhcp relay information option
+      ip dhcp relay information option vpn
+      ipv6 dhcp relay
+      vrf context management
+        ip route 0.0.0.0/0 198.18.101.1
+      vpc domain 1
+        peer-switch
+        peer-keepalive destination 198.18.101.5 source 198.18.101.4
+        delay restore 150
+        peer-gateway
+        auto-recovery reload-delay 360
+        ipv6 nd synchronize
+        ip arp synchronize
+      ngoam install acl
+
+      nxapi http port 80
+
+
+      interface Vlan1
+        no ip redirects
+        no ipv6 redirects
+
+      interface Vlan3600
+        description VPC-Peer-Link SVI
+        no shutdown
+        mtu 9216
+        no ip redirects
+        ip address 10.101.4.1/30
+        no ipv6 redirects
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface port-channel500
+        description "vpc-peer-link DC1-LEAF1--DC1-LEAF2"
+        switchport
+        switchport mode trunk
+        spanning-tree port type network
+        vpc peer-link
+
+      interface nve1
+        no shutdown
+        host-reachability protocol bgp
+        advertise virtual-rmac
+        source-interface loopback1
+
+      interface Ethernet1/1
+        description connected-to-DC1-SPINE1-Ethernet1/1
+        mtu 9216
+        ip address 10.101.4.41/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/2
+        description connected-to-DC1-SPINE2-Ethernet1/1
+        mtu 9216
+        ip address 10.101.4.10/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/3
+        description "PO 500 (vpc-peer-link) member DC1-LEAF1-Ethernet1/3 to DC1-LEAF2-Ethernet1/3"
+        switchport
+        switchport mode trunk
+        channel-group 500 mode active
+
+      interface Ethernet1/4
+        description "PO 500 (vpc-peer-link) member DC1-LEAF1-Ethernet1/4 to DC1-LEAF2-Ethernet1/4"
+        switchport
+        switchport mode trunk
+        channel-group 500 mode active
+
+      interface Ethernet1/5
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/6
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/7
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/8
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/9
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/10
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/11
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/12
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/13
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/14
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/15
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/16
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/17
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/18
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/19
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/20
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/21
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/22
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/23
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/24
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/25
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/26
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/27
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/28
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/29
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/30
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/31
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/32
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/33
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/34
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/35
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/36
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/37
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/38
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/39
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/40
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/41
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/42
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/43
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/44
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/45
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/46
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/47
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/48
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/49
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/50
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/51
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/52
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/53
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/54
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/55
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/56
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/57
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/58
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/59
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/60
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/61
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/62
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/63
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/64
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface mgmt0
+        no cdp enable
+        vrf member management
+        ip address 198.18.101.4/24
+
+      interface loopback0
+        description Routing loopback interface
+        ip address 10.101.1.3/32
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface loopback1
+        description VTEP loopback interface
+        ip address 10.101.2.1/32
+        ip address 10.101.2.2/32 secondary
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos64-cs.10.3.1.F.bin
+      router ospf UNDERLAY
+        router-id 10.101.1.3
+      router bgp 65101
+        router-id 10.101.1.3
+        address-family l2vpn evpn
+          advertise-pip
+        neighbor 10.101.1.1
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+        neighbor 10.101.1.2
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+
+      no logging console
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n4
+    image_definition: null
+    label: DC1-LEAF1
+    node_definition: nxosv9000
+    ram: null
+    tags: []
+    x: -2640
+    y: 400
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: Ethernet1/4
+        slot: 4
+        type: physical
+      - id: i6
+        label: Ethernet1/5
+        slot: 5
+        type: physical
+      - id: i7
+        label: Ethernet1/6
+        slot: 6
+        type: physical
+      - id: i8
+        label: Ethernet1/7
+        slot: 7
+        type: physical
+      - id: i9
+        label: Ethernet1/8
+        slot: 8
+        type: physical
+      - id: i10
+        label: Ethernet1/9
+        slot: 9
+        type: physical
+      - id: i11
+        label: Ethernet1/10
+        slot: 10
+        type: physical
+      - id: i12
+        label: Ethernet1/11
+        slot: 11
+        type: physical
+  - boot_disk_size: null
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Aug  9 05:07:13 2023
+      !Time: Wed Aug  9 05:07:14 2023
+
+      version 10.3(1) Bios:version
+      hostname DC1-LEAF2
+      vdc DC1-LEAF2 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature nxapi
+      cfs eth distribute
+      nv overlay evpn
+      feature ospf
+      feature bgp
+      feature pim
+      feature interface-vlan
+      feature vn-segment-vlan-based
+      feature lacp
+      feature dhcp
+      feature vpc
+      feature lldp
+      feature nv overlay
+      feature ngoam
+
+      no password strength-check
+      username admin password 5 $5$OAKCKE$5Y2S.tv7ZzEhGe9U1YP4iIUaCxWRJ.m.2XpGdc6Bt4C  role network-admin
+      ip domain-lookup
+      copp profile strict
+      snmp-server user admin network-admin auth md5 00402DD672A0B81A7E30ABF550E9485E3E49 priv aes-128 006078DE6CB9C00E676AE0A513F018543D3B localizedV2key
+      snmp-server host 198.18.1.11 traps version 2c public udp-port 2162
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+      no system default switchport
+
+      fabric forwarding anycast-gateway-mac 2020.0000.00aa
+      ipv6 switch-packets lla
+      ip pim rp-address 10.101.3.1 group-list 239.1.1.0/25
+      ip pim ssm range 232.0.0.0/8
+      vlan 1,3600
+
+      route-map fabric-rmap-redist-subnet permit 10
+        match tag 12345
+      service dhcp
+      ip dhcp relay
+      ip dhcp relay information option
+      ip dhcp relay information option vpn
+      ipv6 dhcp relay
+      vrf context management
+        ip route 0.0.0.0/0 198.18.101.1
+      vpc domain 1
+        peer-switch
+        peer-keepalive destination 198.18.101.4 source 198.18.101.5
+        delay restore 150
+        peer-gateway
+        auto-recovery reload-delay 360
+        ipv6 nd synchronize
+        ip arp synchronize
+      ngoam install acl
+
+      nxapi http port 80
+
+
+      interface Vlan1
+        no ip redirects
+        no ipv6 redirects
+
+      interface Vlan3600
+        description VPC-Peer-Link SVI
+        no shutdown
+        mtu 9216
+        no ip redirects
+        ip address 10.101.4.2/30
+        no ipv6 redirects
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface port-channel500
+        description "vpc-peer-link DC1-LEAF2--DC1-LEAF1"
+        switchport
+        switchport mode trunk
+        spanning-tree port type network
+        vpc peer-link
+
+      interface nve1
+        no shutdown
+        host-reachability protocol bgp
+        advertise virtual-rmac
+        source-interface loopback1
+
+      interface Ethernet1/1
+        description connected-to-DC1-SPINE1-Ethernet1/2
+        mtu 9216
+        ip address 10.101.4.17/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/2
+        description connected-to-DC1-SPINE2-Ethernet1/2
+        mtu 9216
+        ip address 10.101.4.21/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/3
+        description "PO 500 (vpc-peer-link) member DC1-LEAF2-Ethernet1/3 to DC1-LEAF1-Ethernet1/3"
+        switchport
+        switchport mode trunk
+        channel-group 500 mode active
+
+      interface Ethernet1/4
+        description "PO 500 (vpc-peer-link) member DC1-LEAF2-Ethernet1/4 to DC1-LEAF1-Ethernet1/4"
+        switchport
+        switchport mode trunk
+        channel-group 500 mode active
+
+      interface Ethernet1/5
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/6
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/7
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/8
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/9
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/10
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/11
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/12
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/13
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/14
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/15
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/16
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/17
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/18
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/19
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/20
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/21
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/22
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/23
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/24
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/25
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/26
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/27
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/28
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/29
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/30
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/31
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/32
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/33
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/34
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/35
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/36
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/37
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/38
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/39
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/40
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/41
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/42
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/43
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/44
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/45
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/46
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/47
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/48
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/49
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/50
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/51
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/52
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/53
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/54
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/55
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/56
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/57
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/58
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/59
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/60
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/61
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/62
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/63
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/64
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface mgmt0
+        no cdp enable
+        vrf member management
+        ip address 198.18.101.5/24
+
+      interface loopback0
+        description Routing loopback interface
+        ip address 10.101.1.6/32
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface loopback1
+        description VTEP loopback interface
+        ip address 10.101.2.5/32
+        ip address 10.101.2.2/32 secondary
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos64-cs.10.3.1.F.bin
+      router ospf UNDERLAY
+        router-id 10.101.1.6
+      router bgp 65101
+        router-id 10.101.1.6
+        address-family l2vpn evpn
+          advertise-pip
+        neighbor 10.101.1.1
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+        neighbor 10.101.1.2
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+
+      no logging console
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n5
+    image_definition: null
+    label: DC1-LEAF2
+    node_definition: nxosv9000
+    ram: null
+    tags: []
+    x: -2520
+    y: 400
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: Ethernet1/4
+        slot: 4
+        type: physical
+      - id: i6
+        label: Ethernet1/5
+        slot: 5
+        type: physical
+      - id: i7
+        label: Ethernet1/6
+        slot: 6
+        type: physical
+      - id: i8
+        label: Ethernet1/7
+        slot: 7
+        type: physical
+      - id: i9
+        label: Ethernet1/8
+        slot: 8
+        type: physical
+      - id: i10
+        label: Ethernet1/9
+        slot: 9
+        type: physical
+      - id: i11
+        label: Ethernet1/10
+        slot: 10
+        type: physical
+      - id: i12
+        label: Ethernet1/11
+        slot: 11
+        type: physical
+  - boot_disk_size: null
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Aug  9 05:08:15 2023
+      !Time: Wed Aug  9 05:08:16 2023
+
+      version 10.3(1) Bios:version
+      hostname DC1-LEAF3
+      vdc DC1-LEAF3 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature nxapi
+      cfs eth distribute
+      nv overlay evpn
+      feature ospf
+      feature bgp
+      feature pim
+      feature interface-vlan
+      feature vn-segment-vlan-based
+      feature lacp
+      feature dhcp
+      feature vpc
+      feature lldp
+      feature nv overlay
+      feature ngoam
+
+      no password strength-check
+      username admin password 5 $5$DHEONJ$Blm7YPc3dtKJbcYoNfpLL/VmF9q1yDZ95.Pt.eSRXsA  role network-admin
+      ip domain-lookup
+      copp profile strict
+      snmp-server user admin network-admin auth md5 3777BF4B5B35C97C4F8AC40621FB6A5CE2E8 priv aes-128 37479A6C6B10A5060BDE805074A66802B6E4 localizedV2key
+      snmp-server host 198.18.1.11 traps version 2c public udp-port 2162
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+      no system default switchport
+
+      fabric forwarding anycast-gateway-mac 2020.0000.00aa
+      ipv6 switch-packets lla
+      ip pim rp-address 10.101.3.1 group-list 239.1.1.0/25
+      ip pim ssm range 232.0.0.0/8
+      vlan 1,3600
+
+      route-map fabric-rmap-redist-subnet permit 10
+        match tag 12345
+      service dhcp
+      ip dhcp relay
+      ip dhcp relay information option
+      ip dhcp relay information option vpn
+      ipv6 dhcp relay
+      vrf context management
+        ip route 0.0.0.0/0 198.18.101.1
+      vpc domain 2
+        peer-switch
+        peer-keepalive destination 198.18.101.7 source 198.18.101.6
+        delay restore 150
+        peer-gateway
+        auto-recovery reload-delay 360
+        ipv6 nd synchronize
+        ip arp synchronize
+      ngoam install acl
+
+      nxapi http port 80
+
+
+      interface Vlan1
+        no ip redirects
+        no ipv6 redirects
+
+      interface Vlan3600
+        description VPC-Peer-Link SVI
+        no shutdown
+        mtu 9216
+        no ip redirects
+        ip address 10.101.4.6/30
+        no ipv6 redirects
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface port-channel500
+        description "vpc-peer-link DC1-LEAF3--DC1-LEAF4"
+        switchport
+        switchport mode trunk
+        spanning-tree port type network
+        vpc peer-link
+
+      interface nve1
+        no shutdown
+        host-reachability protocol bgp
+        advertise virtual-rmac
+        source-interface loopback1
+
+      interface Ethernet1/1
+        description connected-to-DC1-SPINE1-Ethernet1/3
+        mtu 9216
+        ip address 10.101.4.33/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/2
+        description connected-to-DC1-SPINE2-Ethernet1/3
+        mtu 9216
+        ip address 10.101.4.46/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/3
+        description "PO 500 (vpc-peer-link) member DC1-LEAF3-Ethernet1/3 to DC1-LEAF4-Ethernet1/3"
+        switchport
+        switchport mode trunk
+        channel-group 500 mode active
+
+      interface Ethernet1/4
+        description "PO 500 (vpc-peer-link) member DC1-LEAF3-Ethernet1/4 to DC1-LEAF4-Ethernet1/4"
+        switchport
+        switchport mode trunk
+        channel-group 500 mode active
+
+      interface Ethernet1/5
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/6
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/7
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/8
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/9
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/10
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/11
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/12
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/13
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/14
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/15
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/16
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/17
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/18
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/19
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/20
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/21
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/22
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/23
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/24
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/25
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/26
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/27
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/28
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/29
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/30
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/31
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/32
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/33
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/34
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/35
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/36
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/37
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/38
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/39
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/40
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/41
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/42
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/43
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/44
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/45
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/46
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/47
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/48
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/49
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/50
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/51
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/52
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/53
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/54
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/55
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/56
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/57
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/58
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/59
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/60
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/61
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/62
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/63
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/64
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface mgmt0
+        no cdp enable
+        vrf member management
+        ip address 198.18.101.6/24
+
+      interface loopback0
+        description Routing loopback interface
+        ip address 10.101.1.8/32
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface loopback1
+        description VTEP loopback interface
+        ip address 10.101.2.6/32
+        ip address 10.101.2.4/32 secondary
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos64-cs.10.3.1.F.bin
+      router ospf UNDERLAY
+        router-id 10.101.1.8
+      router bgp 65101
+        router-id 10.101.1.8
+        address-family l2vpn evpn
+          advertise-pip
+        neighbor 10.101.1.1
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+        neighbor 10.101.1.2
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+
+      no logging console
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n6
+    image_definition: null
+    label: DC1-LEAF3
+    node_definition: nxosv9000
+    ram: null
+    tags: []
+    x: -2400
+    y: 400
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: Ethernet1/4
+        slot: 4
+        type: physical
+      - id: i6
+        label: Ethernet1/5
+        slot: 5
+        type: physical
+      - id: i7
+        label: Ethernet1/6
+        slot: 6
+        type: physical
+      - id: i8
+        label: Ethernet1/7
+        slot: 7
+        type: physical
+      - id: i9
+        label: Ethernet1/8
+        slot: 8
+        type: physical
+      - id: i10
+        label: Ethernet1/9
+        slot: 9
+        type: physical
+      - id: i11
+        label: Ethernet1/10
+        slot: 10
+        type: physical
+      - id: i12
+        label: Ethernet1/11
+        slot: 11
+        type: physical
+  - boot_disk_size: null
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Aug  9 05:08:46 2023
+      !Time: Wed Aug  9 05:08:47 2023
+
+      version 10.3(1) Bios:version
+      hostname DC1-LEAF4
+      vdc DC1-LEAF4 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature nxapi
+      cfs eth distribute
+      nv overlay evpn
+      feature ospf
+      feature bgp
+      feature pim
+      feature interface-vlan
+      feature vn-segment-vlan-based
+      feature lacp
+      feature dhcp
+      feature vpc
+      feature lldp
+      feature nv overlay
+      feature ngoam
+
+      no password strength-check
+      username admin password 5 $5$JGEKHF$ssEfKwzge5s1yoxrYDk5oPd6mVFYO7XbYyKfb9eVpaC  role network-admin
+      ip domain-lookup
+      copp profile strict
+      snmp-server user admin network-admin auth md5 495220D4EFDC1E1709F58633B9FDB6D75FBA priv aes-128 52137A98B5CC0B1957F4F10DE090B18343FE localizedV2key
+      snmp-server host 198.18.1.11 traps version 2c public udp-port 2162
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+      no system default switchport
+
+      fabric forwarding anycast-gateway-mac 2020.0000.00aa
+      ipv6 switch-packets lla
+      ip pim rp-address 10.101.3.1 group-list 239.1.1.0/25
+      ip pim ssm range 232.0.0.0/8
+      vlan 1,3600
+
+      route-map fabric-rmap-redist-subnet permit 10
+        match tag 12345
+      service dhcp
+      ip dhcp relay
+      ip dhcp relay information option
+      ip dhcp relay information option vpn
+      ipv6 dhcp relay
+      vrf context management
+        ip route 0.0.0.0/0 198.18.101.1
+      vpc domain 2
+        peer-switch
+        peer-keepalive destination 198.18.101.6 source 198.18.101.7
+        delay restore 150
+        peer-gateway
+        auto-recovery reload-delay 360
+        ipv6 nd synchronize
+        ip arp synchronize
+      ngoam install acl
+
+      nxapi http port 80
+
+
+      interface Vlan1
+        no ip redirects
+        no ipv6 redirects
+
+      interface Vlan3600
+        description VPC-Peer-Link SVI
+        no shutdown
+        mtu 9216
+        no ip redirects
+        ip address 10.101.4.5/30
+        no ipv6 redirects
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface port-channel500
+        description "vpc-peer-link DC1-LEAF4--DC1-LEAF3"
+        switchport
+        switchport mode trunk
+        spanning-tree port type network
+        vpc peer-link
+
+      interface nve1
+        no shutdown
+        host-reachability protocol bgp
+        advertise virtual-rmac
+        source-interface loopback1
+
+      interface Ethernet1/1
+        description connected-to-DC1-SPINE1-Ethernet1/4
+        mtu 9216
+        ip address 10.101.4.25/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/2
+        description connected-to-DC1-SPINE2-Ethernet1/4
+        mtu 9216
+        ip address 10.101.4.54/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+
+      interface Ethernet1/3
+        description "PO 500 (vpc-peer-link) member DC1-LEAF4-Ethernet1/3 to DC1-LEAF3-Ethernet1/3"
+        switchport
+        switchport mode trunk
+        channel-group 500 mode active
+
+      interface Ethernet1/4
+        description "PO 500 (vpc-peer-link) member DC1-LEAF4-Ethernet1/4 to DC1-LEAF3-Ethernet1/4"
+        switchport
+        switchport mode trunk
+        channel-group 500 mode active
+
+      interface Ethernet1/5
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/6
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/7
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/8
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/9
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/10
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/11
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/12
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/13
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/14
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/15
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/16
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/17
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/18
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/19
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/20
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/21
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/22
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/23
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/24
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/25
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/26
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/27
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/28
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/29
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/30
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/31
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/32
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/33
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/34
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/35
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/36
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/37
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/38
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/39
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/40
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/41
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/42
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/43
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/44
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/45
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/46
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/47
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/48
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/49
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/50
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/51
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/52
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/53
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/54
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/55
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/56
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/57
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/58
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/59
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/60
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/61
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/62
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/63
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface Ethernet1/64
+        switchport
+        switchport mode trunk
+        switchport trunk allowed vlan none
+        spanning-tree port type edge trunk
+        mtu 9216
+
+      interface mgmt0
+        no cdp enable
+        vrf member management
+        ip address 198.18.101.7/24
+
+      interface loopback0
+        description Routing loopback interface
+        ip address 10.101.1.4/32
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface loopback1
+        description VTEP loopback interface
+        ip address 10.101.2.3/32
+        ip address 10.101.2.4/32 secondary
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos64-cs.10.3.1.F.bin
+      router ospf UNDERLAY
+        router-id 10.101.1.4
+      router bgp 65101
+        router-id 10.101.1.4
+        address-family l2vpn evpn
+          advertise-pip
+        neighbor 10.101.1.1
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+        neighbor 10.101.1.2
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+
+      no logging console
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n7
+    image_definition: null
+    label: DC1-LEAF4
+    node_definition: nxosv9000
+    ram: null
+    tags: []
+    x: -2280
+    y: 400
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: Ethernet1/4
+        slot: 4
+        type: physical
+      - id: i6
+        label: Ethernet1/5
+        slot: 5
+        type: physical
+      - id: i7
+        label: Ethernet1/6
+        slot: 6
+        type: physical
+      - id: i8
+        label: Ethernet1/7
+        slot: 7
+        type: physical
+      - id: i9
+        label: Ethernet1/8
+        slot: 8
+        type: physical
+      - id: i10
+        label: Ethernet1/9
+        slot: 9
+        type: physical
+      - id: i11
+        label: Ethernet1/10
+        slot: 10
+        type: physical
+      - id: i12
+        label: Ethernet1/11
+        slot: 11
+        type: physical
+  - boot_disk_size: null
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Aug 16 03:38:59 2023
+      !Time: Wed Aug 16 03:38:59 2023
+
+      version 10.3(1) Bios:version
+      hostname DC1-ABGW1
+      vdc DC1-ABGW1 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature nxapi
+      cfs eth distribute
+      nv overlay evpn
+      feature ospf
+      feature bgp
+      feature pim
+      feature interface-vlan
+      feature vn-segment-vlan-based
+      feature lacp
+      feature dhcp
+      feature lldp
+      feature nv overlay
+      evpn multisite border-gateway 65101
+        delay-restore time 300
+      feature ngoam
+
+      no password strength-check
+      username admin password 5 $5$PAPNHD$Y94u3kpjz74Jx8EZ60R8BdAdO0g40w5BoAxMmy8are4  role network-admin
+      ip domain-lookup
+      copp profile strict
+      snmp-server user admin network-admin auth md5 37573017D96712373D602E29E756B4C29E06 priv aes-128 167E57298A27470450105411A151E1D1CE42 localizedV2key
+      snmp-server host 198.18.1.11 traps version 2c public udp-port 2162
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+      no system default switchport
+
+      fabric forwarding anycast-gateway-mac 2020.0000.00aa
+      ipv6 switch-packets lla
+      ip pim rp-address 10.101.3.1 group-list 239.1.1.0/25
+      ip pim ssm range 232.0.0.0/8
+      vlan 1
+
+      ip prefix-list default-route seq 5 permit 0.0.0.0/0 le 1
+      ip prefix-list host-route seq 5 permit 0.0.0.0/0 eq 32
+      ipv6 prefix-list default-route-v6 seq 5 permit 0::/0
+      ipv6 prefix-list host-route-v6 seq 5 permit 0::/0 eq 128
+      route-map extcon-rmap-filter deny 10
+        match ip address prefix-list default-route
+      route-map extcon-rmap-filter deny 20
+        match ip address prefix-list host-route
+      route-map extcon-rmap-filter permit 1000
+      route-map extcon-rmap-filter-allow-host deny 10
+        match ip address prefix-list default-route
+      route-map extcon-rmap-filter-allow-host permit 1000
+      route-map extcon-rmap-filter-v6 deny 10
+        match ipv6 address prefix-list default-route-v6
+      route-map extcon-rmap-filter-v6 deny 20
+        match ipv6 address prefix-list host-route-v6
+      route-map extcon-rmap-filter-v6 permit 1000
+      route-map extcon-rmap-filter-v6-allow-host deny 10
+        match ipv6 address prefix-list default-route-v6
+      route-map extcon-rmap-filter-v6-allow-host permit 1000
+      route-map fabric-rmap-redist-subnet permit 10
+        match tag 12345
+      route-map rmap-redist-direct permit 10
+        match tag 54321
+      service dhcp
+      ip dhcp relay
+      ip dhcp relay information option
+      ip dhcp relay information option vpn
+      ipv6 dhcp relay
+      vrf context management
+        ip route 0.0.0.0/0 198.18.101.1
+      ngoam install acl
+
+      nxapi http port 80
+
+
+      interface Vlan1
+
+      interface nve1
+        no shutdown
+        host-reachability protocol bgp
+        source-interface loopback1
+        multisite border-gateway interface loopback100
+
+      interface Ethernet1/1
+        description connected-to-DC1-SPINE1-Ethernet1/5
+        mtu 9216
+        ip address 10.101.4.13/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+        evpn multisite fabric-tracking
+
+      interface Ethernet1/2
+        description connected-to-DC1-SPINE2-Ethernet1/5
+        mtu 9216
+        ip address 10.101.4.37/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+        evpn multisite fabric-tracking
+
+      interface Ethernet1/3
+        description connected-to-DC1-ABGW2-Ethernet1/3
+        mtu 9216
+        ip address 10.101.4.58/30
+        no shutdown
+        evpn multisite dci-tracking
+
+      interface Ethernet1/4
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/5
+        mtu 9216
+        ip address 10.100.1.1/30 tag 54321
+        no shutdown
+        evpn multisite dci-tracking
+
+      interface Ethernet1/6
+        description *** VRF-LITE PEERING TO WAN ***
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/7
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/8
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/9
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/10
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/11
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/12
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/13
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/14
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/15
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/16
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/17
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/18
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/19
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/20
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/21
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/22
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/23
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/24
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/25
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/26
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/27
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/28
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/29
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/30
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/31
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/32
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/33
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/34
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/35
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/36
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/37
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/38
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/39
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/40
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/41
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/42
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/43
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/44
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/45
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/46
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/47
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/48
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/49
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/50
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/51
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/52
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/53
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/54
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/55
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/56
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/57
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/58
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/59
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/60
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/61
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/62
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/63
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/64
+        mtu 9216
+        no shutdown
+
+      interface mgmt0
+        no cdp enable
+        vrf member management
+        ip address 198.18.101.8/24
+
+      interface loopback0
+        description Routing loopback interface
+        ip address 10.101.1.7/32 tag 54321
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface loopback1
+        description VTEP loopback interface
+        ip address 10.101.2.7/32 tag 54321
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface loopback100
+        ip address 10.100.0.1/32 tag 54321
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos64-cs.10.3.1.F.bin
+      router ospf UNDERLAY
+        router-id 10.101.1.7
+      router bgp 65101
+        router-id 10.101.1.7
+        address-family ipv4 unicast
+          redistribute direct route-map rmap-redist-direct
+          maximum-paths 64
+          maximum-paths ibgp 64
+        address-family ipv6 unicast
+          maximum-paths 64
+          maximum-paths ibgp 64
+        address-family l2vpn evpn
+          advertise-pip
+        neighbor 10.100.1.2
+          remote-as 65102
+          update-source Ethernet1/5
+          address-family ipv4 unicast
+            next-hop-self
+        neighbor 10.101.1.1
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+        neighbor 10.101.1.2
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+        neighbor 10.101.4.57
+          remote-as 65101
+          update-source Ethernet1/3
+          address-family ipv4 unicast
+            next-hop-self
+        neighbor 10.102.1.1
+          remote-as 65102
+          update-source loopback0
+          ebgp-multihop 5
+          peer-type fabric-external
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            rewrite-evpn-rt-asn
+        neighbor 10.102.1.2
+          remote-as 65102
+          update-source loopback0
+          ebgp-multihop 5
+          peer-type fabric-external
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            rewrite-evpn-rt-asn
+
+      no logging console
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n8
+    image_definition: null
+    label: DC1-ABGW1
+    node_definition: nxosv9000
+    ram: null
+    tags: []
+    x: -2520
+    y: -40
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: Ethernet1/4
+        slot: 4
+        type: physical
+      - id: i6
+        label: Ethernet1/5
+        slot: 5
+        type: physical
+      - id: i7
+        label: Ethernet1/6
+        slot: 6
+        type: physical
+      - id: i8
+        label: Ethernet1/7
+        slot: 7
+        type: physical
+      - id: i9
+        label: Ethernet1/8
+        slot: 8
+        type: physical
+      - id: i10
+        label: Ethernet1/9
+        slot: 9
+        type: physical
+      - id: i11
+        label: Ethernet1/10
+        slot: 10
+        type: physical
+      - id: i12
+        label: Ethernet1/11
+        slot: 11
+        type: physical
+  - boot_disk_size: null
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Aug 16 03:20:31 2023
+      !Time: Wed Aug 16 03:20:31 2023
+
+      version 10.3(1) Bios:version
+      hostname DC1-ABGW2
+      vdc DC1-ABGW2 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature nxapi
+      cfs eth distribute
+      nv overlay evpn
+      feature ospf
+      feature bgp
+      feature pim
+      feature interface-vlan
+      feature vn-segment-vlan-based
+      feature lacp
+      feature dhcp
+      feature lldp
+      feature nv overlay
+      evpn multisite border-gateway 65101
+        delay-restore time 300
+      feature ngoam
+
+      no password strength-check
+      username admin password 5 $5$IEMIKJ$fIo/sd9Cuhc4M29V35.5HDPl34Nlr9.jNljpqkjfPq1  role network-admin
+      ip domain-lookup
+      copp profile strict
+      snmp-server user admin network-admin auth md5 32384511AA4FECBD83080E6B509298CCE4B9 priv aes-128 52361951F845B4AE935E77704DC9D49DF8F0 localizedV2key
+      snmp-server host 198.18.1.11 traps version 2c public udp-port 2162
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+
+      fabric forwarding anycast-gateway-mac 2020.0000.00aa
+      ipv6 switch-packets lla
+      ip pim rp-address 10.101.3.1 group-list 239.1.1.0/25
+      ip pim ssm range 232.0.0.0/8
+      vlan 1
+
+      ip prefix-list default-route seq 5 permit 0.0.0.0/0 le 1
+      ip prefix-list host-route seq 5 permit 0.0.0.0/0 eq 32
+      ipv6 prefix-list default-route-v6 seq 5 permit 0::/0
+      ipv6 prefix-list host-route-v6 seq 5 permit 0::/0 eq 128
+      route-map extcon-rmap-filter deny 10
+        match ip address prefix-list default-route
+      route-map extcon-rmap-filter deny 20
+        match ip address prefix-list host-route
+      route-map extcon-rmap-filter permit 1000
+      route-map extcon-rmap-filter-allow-host deny 10
+        match ip address prefix-list default-route
+      route-map extcon-rmap-filter-allow-host permit 1000
+      route-map extcon-rmap-filter-v6 deny 10
+        match ipv6 address prefix-list default-route-v6
+      route-map extcon-rmap-filter-v6 deny 20
+        match ipv6 address prefix-list host-route-v6
+      route-map extcon-rmap-filter-v6 permit 1000
+      route-map extcon-rmap-filter-v6-allow-host deny 10
+        match ipv6 address prefix-list default-route-v6
+      route-map extcon-rmap-filter-v6-allow-host permit 1000
+      route-map fabric-rmap-redist-subnet permit 10
+        match tag 12345
+      route-map rmap-redist-direct permit 10
+        match tag 54321
+      service dhcp
+      ip dhcp relay
+      ip dhcp relay information option
+      ip dhcp relay information option vpn
+      ipv6 dhcp relay
+      vrf context management
+        ip route 0.0.0.0/0 198.18.101.1
+      ngoam install acl
+
+      nxapi http port 80
+
+
+      interface Vlan1
+
+      interface nve1
+        no shutdown
+        host-reachability protocol bgp
+        source-interface loopback1
+        multisite border-gateway interface loopback100
+
+      interface Ethernet1/1
+        description connected-to-DC1-SPINE1-Ethernet1/6
+        no switchport
+        mtu 9216
+        ip address 10.101.4.49/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+        evpn multisite fabric-tracking
+
+      interface Ethernet1/2
+        description connected-to-DC1-SPINE2-Ethernet1/6
+        no switchport
+        mtu 9216
+        ip address 10.101.4.29/30
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+        no shutdown
+        evpn multisite fabric-tracking
+
+      interface Ethernet1/3
+        description connected-to-DC1-ABGW1-Ethernet1/3
+        no switchport
+        mtu 9216
+        ip address 10.101.4.57/30
+        no shutdown
+        evpn multisite dci-tracking
+
+      interface Ethernet1/4
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/5
+        no switchport
+        mtu 9216
+        ip address 10.100.1.5/30 tag 54321
+        no shutdown
+        evpn multisite dci-tracking
+
+      interface Ethernet1/6
+        description *** VRF-LITE PEERING TO WAN ***
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/7
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/8
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/9
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/10
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/11
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/12
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/13
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/14
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/15
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/16
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/17
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/18
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/19
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/20
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/21
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/22
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/23
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/24
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/25
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/26
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/27
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/28
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/29
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/30
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/31
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/32
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/33
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/34
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/35
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/36
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/37
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/38
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/39
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/40
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/41
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/42
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/43
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/44
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/45
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/46
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/47
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/48
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/49
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/50
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/51
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/52
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/53
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/54
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/55
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/56
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/57
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/58
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/59
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/60
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/61
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/62
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/63
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/64
+        no switchport
+        mtu 9216
+        no shutdown
+
+      interface mgmt0
+        no cdp enable
+        vrf member management
+        ip address 198.18.101.9/24
+
+      interface loopback0
+        description Routing loopback interface
+        ip address 10.101.1.5/32 tag 54321
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface loopback1
+        description VTEP loopback interface
+        ip address 10.101.2.8/32 tag 54321
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface loopback100
+        ip address 10.100.0.1/32 tag 54321
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos64-cs.10.3.1.F.bin
+      router ospf UNDERLAY
+        router-id 10.101.1.5
+      router bgp 65101
+        router-id 10.101.1.5
+        address-family ipv4 unicast
+          redistribute direct route-map rmap-redist-direct
+          maximum-paths 64
+          maximum-paths ibgp 64
+        address-family ipv6 unicast
+          maximum-paths 64
+          maximum-paths ibgp 64
+        address-family l2vpn evpn
+          advertise-pip
+        neighbor 10.100.1.6
+          remote-as 65102
+          update-source Ethernet1/5
+          address-family ipv4 unicast
+            next-hop-self
+        neighbor 10.101.1.1
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+        neighbor 10.101.1.2
+          remote-as 65101
+          update-source loopback0
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+        neighbor 10.101.4.58
+          remote-as 65101
+          update-source Ethernet1/3
+          address-family ipv4 unicast
+            next-hop-self
+        neighbor 10.102.1.1
+          remote-as 65102
+          update-source loopback0
+          ebgp-multihop 5
+          peer-type fabric-external
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            rewrite-evpn-rt-asn
+        neighbor 10.102.1.2
+          remote-as 65102
+          update-source loopback0
+          ebgp-multihop 5
+          peer-type fabric-external
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            rewrite-evpn-rt-asn
+
+      no logging console
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n9
+    image_definition: null
+    label: DC1-ABGW2
+    node_definition: nxosv9000
+    ram: null
+    tags: []
+    x: -2360
+    y: 40
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: Ethernet1/4
+        slot: 4
+        type: physical
+      - id: i6
+        label: Ethernet1/5
+        slot: 5
+        type: physical
+      - id: i7
+        label: Ethernet1/6
+        slot: 6
+        type: physical
+      - id: i8
+        label: Ethernet1/7
+        slot: 7
+        type: physical
+      - id: i9
+        label: Ethernet1/8
+        slot: 8
+        type: physical
+      - id: i10
+        label: Ethernet1/9
+        slot: 9
+        type: physical
+      - id: i11
+        label: Ethernet1/10
+        slot: 10
+        type: physical
+      - id: i12
+        label: Ethernet1/11
+        slot: 11
+        type: physical
+  - boot_disk_size: null
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Aug  9 03:14:42 2023
+      !Time: Wed Aug  9 03:14:43 2023
+
+      version 10.3(1) Bios:version
+      hostname WAN
+      vdc WAN id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature bgp
+
+      no password strength-check
+      username admin password 5 $5$NMMAEC$RlM.yAQl18pda0uKw17uYZDATNljly9huqhltTNcQt.  role network-admin
+      ip domain-lookup
+      snmp-server user admin network-admin auth md5 333D3EB62541DBB136BB1303E1C6018DEE81 priv aes-128 00542EE42760D3EB7ADD0952A38753B4C1E9 localizedV2key
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+      no system default switchport
+
+      vlan 1
+
+      vrf context management
+        ip route 0.0.0.0/0 198.18.101.1
+
+      interface Ethernet1/1
+        description ** DC1-ABGW1 **
+        no shutdown
+
+      interface Ethernet1/1.11
+        description ** VRF1 Peering **
+        encapsulation dot1q 11
+        ip address 192.168.254.254/30
+        no shutdown
+
+      interface Ethernet1/1.12
+        description ** VRF2 Peering **
+        encapsulation dot1q 12
+        ip address 192.168.253.254/30
+        no shutdown
+
+      interface Ethernet1/2
+        description ** DC1-ABGW2 **
+        no shutdown
+
+      interface Ethernet1/2.11
+        description ** VRF1 Peering **
+        encapsulation dot1q 11
+        ip address 192.168.254.250/30
+        no shutdown
+
+      interface Ethernet1/2.12
+        description ** VRF2 Peering **
+        encapsulation dot1q 12
+        ip address 192.168.253.250/30
+        no shutdown
+
+      interface Ethernet1/3
+        description ** DC2-VBGW1 **
+        no shutdown
+
+      interface Ethernet1/3.11
+        description ** VRF1 Peering **
+        encapsulation dot1q 11
+        ip address 192.168.254.246/30
+        no shutdown
+
+      interface Ethernet1/3.12
+        description ** VRF2 Peering **
+        encapsulation dot1q 12
+        ip address 192.168.253.246/30
+        no shutdown
+
+      interface Ethernet1/4
+        description ** DC2-VBGW2 **
+        no shutdown
+
+      interface Ethernet1/4.11
+        description ** VRF1 Peering **
+        encapsulation dot1q 11
+        ip address 192.168.254.242/30
+        no shutdown
+
+      interface Ethernet1/4.12
+        description ** VRF2 Peering **
+        encapsulation dot1q 12
+        ip address 192.168.253.242/30
+        no shutdown
+
+      interface Ethernet1/5
+
+      interface Ethernet1/6
+
+      interface Ethernet1/7
+
+      interface Ethernet1/8
+
+      interface Ethernet1/9
+
+      interface Ethernet1/10
+
+      interface Ethernet1/11
+
+      interface Ethernet1/12
+
+      interface Ethernet1/13
+
+      interface Ethernet1/14
+
+      interface Ethernet1/15
+
+      interface Ethernet1/16
+
+      interface Ethernet1/17
+
+      interface Ethernet1/18
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface mgmt0
+        vrf member management
+        ip address 198.18.101.254/24
+
+      interface loopback0
+        ip address 192.168.255.255/32
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos64-cs.10.3.1.F.bin
+      router bgp 65100
+        bestpath as-path multipath-relax
+        bestpath always-compare-med
+        address-family ipv4 unicast
+          network 192.168.255.255/32
+          maximum-paths 4
+        neighbor 192.168.253.241
+          remote-as 65102
+          address-family ipv4 unicast
+            soft-reconfiguration inbound
+        neighbor 192.168.253.245
+          remote-as 65102
+          address-family ipv4 unicast
+            soft-reconfiguration inbound
+        neighbor 192.168.253.249
+          remote-as 65101
+          address-family ipv4 unicast
+            soft-reconfiguration inbound
+        neighbor 192.168.253.253
+          remote-as 65101
+          address-family ipv4 unicast
+            soft-reconfiguration inbound
+        neighbor 192.168.254.241
+          remote-as 65102
+          address-family ipv4 unicast
+            soft-reconfiguration inbound
+        neighbor 192.168.254.245
+          remote-as 65102
+          address-family ipv4 unicast
+            soft-reconfiguration inbound
+        neighbor 192.168.254.249
+          remote-as 65101
+          address-family ipv4 unicast
+            soft-reconfiguration inbound
+        neighbor 192.168.254.253
+          remote-as 65101
+          address-family ipv4 unicast
+            soft-reconfiguration inbound
+
+      no logging console
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n10
+    image_definition: null
+    label: WAN
+    node_definition: nxosv9000
+    ram: null
+    tags: []
+    x: -2120
+    y: -240
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: Ethernet1/4
+        slot: 4
+        type: physical
+  - boot_disk_size: null
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Aug 16 03:21:11 2023
+      !Time: Wed Aug 16 03:21:11 2023
+
+      version 10.3(1) Bios:version
+      hostname DC2-VBGW2
+      vdc DC2-VBGW2 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature nxapi
+      cfs eth distribute
+      nv overlay evpn
+      feature ospf
+      feature bgp
+      feature pim
+      feature interface-vlan
+      feature vn-segment-vlan-based
+      feature lacp
+      feature dhcp
+      feature vpc
+      feature lldp
+      feature nv overlay
+      evpn multisite border-gateway 65102
+        delay-restore time 300
+      feature ngoam
+
+      no password strength-check
+      username admin password 5 $5$NEEEAM$RE7axiS4RTGjYe3wGpXrxlcaTh43Se6Og8c3if5Mpy/  role network-admin
+      ip domain-lookup
+      copp profile strict
+      snmp-server user admin network-admin auth md5 055E5034A82CB4674FF3480EEAE5138A54AC priv aes-128 056B3447CEB770F3D663F6DD3B739510DC21 localizedV2key
+      snmp-server host 198.18.1.11 traps version 2c public udp-port 2162
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+      no system default switchport
+
+      fabric forwarding anycast-gateway-mac 2020.0000.00aa
+      ipv6 switch-packets lla
+      ip pim rp-address 10.102.3.1 group-list 239.1.1.0/25
+      ip pim ssm range 232.0.0.0/8
+      vlan 1,3600
+
+      ip prefix-list default-route seq 5 permit 0.0.0.0/0 le 1
+      ip prefix-list host-route seq 5 permit 0.0.0.0/0 eq 32
+      ipv6 prefix-list default-route-v6 seq 5 permit 0::/0
+      ipv6 prefix-list host-route-v6 seq 5 permit 0::/0 eq 128
+      route-map extcon-rmap-filter deny 10
+        match ip address prefix-list default-route
+      route-map extcon-rmap-filter deny 20
+        match ip address prefix-list host-route
+      route-map extcon-rmap-filter permit 1000
+      route-map extcon-rmap-filter-allow-host deny 10
+        match ip address prefix-list default-route
+      route-map extcon-rmap-filter-allow-host permit 1000
+      route-map extcon-rmap-filter-v6 deny 10
+        match ipv6 address prefix-list default-route-v6
+      route-map extcon-rmap-filter-v6 deny 20
+        match ipv6 address prefix-list host-route-v6
+      route-map extcon-rmap-filter-v6 permit 1000
+      route-map extcon-rmap-filter-v6-allow-host deny 10
+        match ipv6 address prefix-list default-route-v6
+      route-map extcon-rmap-filter-v6-allow-host permit 1000
+      route-map fabric-rmap-redist-subnet permit 10
+        match tag 12345
+      route-map rmap-redist-direct permit 10
+        match tag 54321
+      service dhcp
+      ip dhcp relay
+      ip dhcp relay information option
+      ip dhcp relay information option vpn
+      ipv6 dhcp relay
+      vrf context management
+        ip route 0.0.0.0/0 198.18.102.1
+      vpc domain 1
+        peer-switch
+        peer-keepalive destination 198.18.102.2 source 198.18.102.3
+        delay restore 150
+        peer-gateway
+        auto-recovery reload-delay 360
+        ipv6 nd synchronize
+        ip arp synchronize
+      ngoam install acl
+
+      nxapi http port 80
+
+
+      interface Vlan1
+        no ip redirects
+        no ipv6 redirects
+
+      interface Vlan3600
+        description VPC-Peer-Link SVI
+        no shutdown
+        mtu 9216
+        no ip redirects
+        ip address 10.102.4.2/30
+        no ipv6 redirects
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface port-channel500
+        description "vpc-peer-link DC2-VBGW2--DC2-VBGW1"
+        switchport
+        switchport mode trunk
+        spanning-tree port type network
+        vpc peer-link
+
+      interface nve1
+        no shutdown
+        host-reachability protocol bgp
+        advertise virtual-rmac
+        source-interface loopback1
+        multisite border-gateway interface loopback100
+
+      interface Ethernet1/1
+        description "PO 500 (vpc-peer-link) member DC2-VBGW2-Ethernet1/1 to DC2-VBGW1-Ethernet1/1"
+        switchport
+        switchport mode trunk
+        channel-group 500 mode active
+
+      interface Ethernet1/2
+        description "PO 500 (vpc-peer-link) member DC2-VBGW2-Ethernet1/2 to DC2-VBGW1-Ethernet1/2"
+        switchport
+        switchport mode trunk
+        channel-group 500 mode active
+
+      interface Ethernet1/3
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/4
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/5
+        mtu 9216
+        ip address 10.100.1.6/30 tag 54321
+        no shutdown
+        evpn multisite dci-tracking
+
+      interface Ethernet1/6
+        description *** VRF-LITE PEERING TO WAN ***
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/7
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/8
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/9
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/10
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/11
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/12
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/13
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/14
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/15
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/16
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/17
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/18
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/19
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/20
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/21
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/22
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/23
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/24
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/25
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/26
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/27
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/28
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/29
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/30
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/31
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/32
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/33
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/34
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/35
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/36
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/37
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/38
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/39
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/40
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/41
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/42
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/43
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/44
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/45
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/46
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/47
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/48
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/49
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/50
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/51
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/52
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/53
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/54
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/55
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/56
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/57
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/58
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/59
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/60
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/61
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/62
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/63
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/64
+        mtu 9216
+        no shutdown
+
+      interface mgmt0
+        no cdp enable
+        vrf member management
+        ip address 198.18.102.3/24
+
+      interface loopback0
+        description Routing loopback interface
+        ip address 10.102.1.1/32 tag 54321
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface loopback1
+        description VTEP loopback interface
+        ip address 10.102.2.1/32 tag 54321
+        ip address 10.102.2.3/32 secondary tag 54321
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface loopback100
+        ip address 10.100.0.2/32 tag 54321
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos64-cs.10.3.1.F.bin
+      router ospf UNDERLAY
+        router-id 10.102.1.1
+      router bgp 65102
+        router-id 10.102.1.1
+        address-family ipv4 unicast
+          redistribute direct route-map rmap-redist-direct
+          maximum-paths 64
+          maximum-paths ibgp 64
+        address-family ipv6 unicast
+          maximum-paths 64
+          maximum-paths ibgp 64
+        address-family l2vpn evpn
+          advertise-pip
+        neighbor 10.100.1.5
+          remote-as 65101
+          update-source Ethernet1/5
+          address-family ipv4 unicast
+            next-hop-self
+        neighbor 10.101.1.5
+          remote-as 65101
+          update-source loopback0
+          ebgp-multihop 5
+          peer-type fabric-external
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            rewrite-evpn-rt-asn
+        neighbor 10.101.1.7
+          remote-as 65101
+          update-source loopback0
+          ebgp-multihop 5
+          peer-type fabric-external
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            rewrite-evpn-rt-asn
+        neighbor 10.102.4.1
+          remote-as 65102
+          update-source Vlan3600
+          address-family ipv4 unicast
+            next-hop-self
+
+      no logging console
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n11
+    image_definition: null
+    label: DC2-VBGW2
+    node_definition: nxosv9000
+    ram: null
+    tags: []
+    x: -1640
+    y: 40
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: Ethernet1/4
+        slot: 4
+        type: physical
+      - id: i6
+        label: Ethernet1/5
+        slot: 5
+        type: physical
+      - id: i7
+        label: Ethernet1/6
+        slot: 6
+        type: physical
+      - id: i8
+        label: Ethernet1/7
+        slot: 7
+        type: physical
+      - id: i9
+        label: Ethernet1/8
+        slot: 8
+        type: physical
+      - id: i10
+        label: Ethernet1/9
+        slot: 9
+        type: physical
+      - id: i11
+        label: Ethernet1/10
+        slot: 10
+        type: physical
+      - id: i12
+        label: Ethernet1/11
+        slot: 11
+        type: physical
+  - boot_disk_size: null
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Wed Aug 16 03:20:48 2023
+      !Time: Wed Aug 16 03:20:49 2023
+
+      version 10.3(1) Bios:version
+      hostname DC2-VBGW1
+      vdc DC2-VBGW1 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature nxapi
+      cfs eth distribute
+      nv overlay evpn
+      feature ospf
+      feature bgp
+      feature pim
+      feature interface-vlan
+      feature vn-segment-vlan-based
+      feature lacp
+      feature dhcp
+      feature vpc
+      feature lldp
+      feature nv overlay
+      evpn multisite border-gateway 65102
+        delay-restore time 300
+      feature ngoam
+
+      no password strength-check
+      username admin password 5 $5$ACLKHK$CvyZ8hYUNKReDDp.O1iN/HvxM4.xCtXFwnJK/cH/pP5  role network-admin
+      ip domain-lookup
+      copp profile strict
+      snmp-server user admin network-admin auth md5 0070D7731E6008B081BB95020D36D07AA0A6 priv aes-128 366AB742225E4F8F80C6831E1930813EBD84 localizedV2key
+      snmp-server host 198.18.1.11 traps version 2c public udp-port 2162
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+      no system default switchport
+
+      fabric forwarding anycast-gateway-mac 2020.0000.00aa
+      ipv6 switch-packets lla
+      ip pim rp-address 10.102.3.1 group-list 239.1.1.0/25
+      ip pim ssm range 232.0.0.0/8
+      vlan 1,3600
+
+      ip prefix-list default-route seq 5 permit 0.0.0.0/0 le 1
+      ip prefix-list host-route seq 5 permit 0.0.0.0/0 eq 32
+      ipv6 prefix-list default-route-v6 seq 5 permit 0::/0
+      ipv6 prefix-list host-route-v6 seq 5 permit 0::/0 eq 128
+      route-map extcon-rmap-filter deny 10
+        match ip address prefix-list default-route
+      route-map extcon-rmap-filter deny 20
+        match ip address prefix-list host-route
+      route-map extcon-rmap-filter permit 1000
+      route-map extcon-rmap-filter-allow-host deny 10
+        match ip address prefix-list default-route
+      route-map extcon-rmap-filter-allow-host permit 1000
+      route-map extcon-rmap-filter-v6 deny 10
+        match ipv6 address prefix-list default-route-v6
+      route-map extcon-rmap-filter-v6 deny 20
+        match ipv6 address prefix-list host-route-v6
+      route-map extcon-rmap-filter-v6 permit 1000
+      route-map extcon-rmap-filter-v6-allow-host deny 10
+        match ipv6 address prefix-list default-route-v6
+      route-map extcon-rmap-filter-v6-allow-host permit 1000
+      route-map fabric-rmap-redist-subnet permit 10
+        match tag 12345
+      route-map rmap-redist-direct permit 10
+        match tag 54321
+      service dhcp
+      ip dhcp relay
+      ip dhcp relay information option
+      ip dhcp relay information option vpn
+      ipv6 dhcp relay
+      vrf context management
+        ip route 0.0.0.0/0 198.18.102.1
+      vpc domain 1
+        peer-switch
+        peer-keepalive destination 198.18.102.3 source 198.18.102.2
+        delay restore 150
+        peer-gateway
+        auto-recovery reload-delay 360
+        ipv6 nd synchronize
+        ip arp synchronize
+      ngoam install acl
+
+      nxapi http port 80
+
+
+      interface Vlan1
+        no ip redirects
+        no ipv6 redirects
+
+      interface Vlan3600
+        description VPC-Peer-Link SVI
+        no shutdown
+        mtu 9216
+        no ip redirects
+        ip address 10.102.4.1/30
+        no ipv6 redirects
+        ip ospf network point-to-point
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface port-channel500
+        description "vpc-peer-link DC2-VBGW1--DC2-VBGW2"
+        switchport
+        switchport mode trunk
+        spanning-tree port type network
+        vpc peer-link
+
+      interface nve1
+        no shutdown
+        host-reachability protocol bgp
+        advertise virtual-rmac
+        source-interface loopback1
+        multisite border-gateway interface loopback100
+
+      interface Ethernet1/1
+        description "PO 500 (vpc-peer-link) member DC2-VBGW1-Ethernet1/1 to DC2-VBGW2-Ethernet1/1"
+        switchport
+        switchport mode trunk
+        channel-group 500 mode active
+
+      interface Ethernet1/2
+        description "PO 500 (vpc-peer-link) member DC2-VBGW1-Ethernet1/2 to DC2-VBGW2-Ethernet1/2"
+        switchport
+        switchport mode trunk
+        channel-group 500 mode active
+
+      interface Ethernet1/3
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/4
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/5
+        mtu 9216
+        ip address 10.100.1.2/30 tag 54321
+        no shutdown
+        evpn multisite dci-tracking
+
+      interface Ethernet1/6
+        description *** VRF-LITE PEERING TO WAN ***
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/7
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/8
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/9
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/10
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/11
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/12
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/13
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/14
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/15
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/16
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/17
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/18
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/19
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/20
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/21
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/22
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/23
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/24
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/25
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/26
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/27
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/28
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/29
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/30
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/31
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/32
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/33
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/34
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/35
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/36
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/37
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/38
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/39
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/40
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/41
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/42
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/43
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/44
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/45
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/46
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/47
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/48
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/49
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/50
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/51
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/52
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/53
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/54
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/55
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/56
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/57
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/58
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/59
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/60
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/61
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/62
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/63
+        mtu 9216
+        no shutdown
+
+      interface Ethernet1/64
+        mtu 9216
+        no shutdown
+
+      interface mgmt0
+        no cdp enable
+        vrf member management
+        ip address 198.18.102.2/24
+
+      interface loopback0
+        description Routing loopback interface
+        ip address 10.102.1.2/32 tag 54321
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface loopback1
+        description VTEP loopback interface
+        ip address 10.102.2.2/32 tag 54321
+        ip address 10.102.2.3/32 secondary tag 54321
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+
+      interface loopback100
+        ip address 10.100.0.2/32 tag 54321
+        ip router ospf UNDERLAY area 0.0.0.0
+        ip pim sparse-mode
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos64-cs.10.3.1.F.bin
+      router ospf UNDERLAY
+        router-id 10.102.1.2
+      router bgp 65102
+        router-id 10.102.1.2
+        address-family ipv4 unicast
+          redistribute direct route-map rmap-redist-direct
+          maximum-paths 64
+          maximum-paths ibgp 64
+        address-family ipv6 unicast
+          maximum-paths 64
+          maximum-paths ibgp 64
+        address-family l2vpn evpn
+          advertise-pip
+        neighbor 10.100.1.1
+          remote-as 65101
+          update-source Ethernet1/5
+          address-family ipv4 unicast
+            next-hop-self
+        neighbor 10.101.1.5
+          remote-as 65101
+          update-source loopback0
+          ebgp-multihop 5
+          peer-type fabric-external
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            rewrite-evpn-rt-asn
+        neighbor 10.101.1.7
+          remote-as 65101
+          update-source loopback0
+          ebgp-multihop 5
+          peer-type fabric-external
+          address-family l2vpn evpn
+            send-community
+            send-community extended
+            rewrite-evpn-rt-asn
+        neighbor 10.102.4.2
+          remote-as 65102
+          update-source Vlan3600
+          address-family ipv4 unicast
+            next-hop-self
+
+      no logging console
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n12
+    image_definition: null
+    label: DC2-VBGW1
+    node_definition: nxosv9000
+    ram: null
+    tags: []
+    x: -1840
+    y: -40
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: Ethernet1/4
+        slot: 4
+        type: physical
+      - id: i6
+        label: Ethernet1/5
+        slot: 5
+        type: physical
+      - id: i7
+        label: Ethernet1/6
+        slot: 6
+        type: physical
+      - id: i8
+        label: Ethernet1/7
+        slot: 7
+        type: physical
+      - id: i9
+        label: Ethernet1/8
+        slot: 8
+        type: physical
+      - id: i10
+        label: Ethernet1/9
+        slot: 9
+        type: physical
+      - id: i11
+        label: Ethernet1/10
+        slot: 10
+        type: physical
+      - id: i12
+        label: Ethernet1/11
+        slot: 11
+        type: physical
+  - boot_disk_size: null
+    configuration: |-
+      #cloud-config
+      hostname: v1-n1-h1
+      manage_etc_hosts: True
+      system_info:
+        default_user:
+          name: cisco
+      password: cisco
+      chpasswd: { expire: False }
+      ssh_pwauth: True
+      ssh_authorized_keys:
+         - your-ssh-pubkey-line-goes-here
+      write_files:
+        - path: /etc/netplan/50-cloud-init.yaml
+          append: false
+          content: |
+            network:
+              version: 2
+              ethernets:
+                ens2:
+                  dhcp4: false
+                  addresses:
+                    - 198.18.101.12/24
+                  gateway4: 198.18.101.1
+                  nameservers:
+                    addresses:
+                      - 8.8.8.8
+                ens3:
+                  dhcp4: false
+                ens4:
+                  dhcp4: false
+              bonds:
+                bond0:
+                  interfaces:
+                    - ens3
+                    - ens4
+                  parameters:
+                    mode: 802.3ad
+                    lacp-rate: fast
+                    mii-monitor-interval: 100
+              vlans:
+                vlan.11:
+                  id: 11
+                  link: bond0
+                  addresses:
+                    - 192.168.11.2/24
+                  routes:
+                    - to: 192.168.0.0/16
+                      via: 192.168.11.1
+                      metric: 3
+      runcmd:
+       - ethtool -s ens3 autoneg off speed 1000 duplex full
+       - ethtool -s ens4 autoneg off speed 1000 duplex full
+       - netplan apply
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n13
+    image_definition: null
+    label: ' V1-N1-H1'
+    node_definition: ubuntu
+    ram: null
+    tags: []
+    x: -2640
+    y: 560
+    interfaces:
+      - id: i0
+        label: ens2
+        slot: 0
+        type: physical
+      - id: i1
+        label: ens3
+        slot: 1
+        type: physical
+      - id: i2
+        label: ens4
+        slot: 2
+        type: physical
+      - id: i3
+        label: ens5
+        slot: 3
+        type: physical
+      - id: i4
+        label: ens6
+        slot: 4
+        type: physical
+  - boot_disk_size: null
+    configuration: |-
+      #cloud-config
+      hostname: v1-n2-h1
+      manage_etc_hosts: True
+      system_info:
+        default_user:
+          name: cisco
+      password: cisco
+      chpasswd: { expire: False }
+      ssh_pwauth: True
+      ssh_authorized_keys:
+         - your-ssh-pubkey-line-goes-here
+      write_files:a
+        - path: /etc/netplan/50-cloud-init.yaml
+          append: false
+          content: |
+            network:
+              version: 2
+              ethernets:
+                ens2:
+                  dhcp4: false
+                  addresses:
+                    - 198.18.101.13/24
+                  gateway4: 198.18.101.1
+                  nameservers:
+                    addresses:
+                      - 8.8.8.8
+                ens3:
+                  dhcp4: false
+                ens4:
+                  dhcp4: false
+              bonds:
+                bond0:
+                  interfaces:
+                    - ens3
+                    - ens4
+                  parameters:
+                    mode: 802.3ad
+                    lacp-rate: fast
+                    mii-monitor-interval: 100
+              vlans:
+                vlan.12:
+                  id: 12
+                  link: bond0
+                  addresses:
+                    - 192.168.12.2/24
+                  routes:
+                    - to: 192.168.0.0/16
+                      via: 192.168.12.1
+                      metric: 3
+      runcmd:
+       - ethtool -s ens3 autoneg off speed 1000 duplex full
+       - ethtool -s ens4 autoneg off speed 1000 duplex full
+       - netplan apply
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n14
+    image_definition: null
+    label: ' V1-N2-H1'
+    node_definition: ubuntu
+    ram: null
+    tags: []
+    x: -2520
+    y: 560
+    interfaces:
+      - id: i0
+        label: ens2
+        slot: 0
+        type: physical
+      - id: i1
+        label: ens3
+        slot: 1
+        type: physical
+      - id: i2
+        label: ens4
+        slot: 2
+        type: physical
+      - id: i3
+        label: ens5
+        slot: 3
+        type: physical
+      - id: i4
+        label: ens6
+        slot: 4
+        type: physical
+  - boot_disk_size: null
+    configuration: |-
+      #cloud-config
+      hostname: v1-n1-h2
+      manage_etc_hosts: True
+      system_info:
+        default_user:
+          name: cisco
+      password: cisco
+      chpasswd: { expire: False }
+      ssh_pwauth: True
+      ssh_authorized_keys:
+         - your-ssh-pubkey-line-goes-here
+      write_files:a
+        - path: /etc/netplan/50-cloud-init.yaml
+          append: false
+          content: |
+            network:
+              version: 2
+              ethernets:
+                ens2:
+                  dhcp4: false
+                  addresses:
+                    - 198.18.101.14/24
+                  gateway4: 198.18.101.1
+                  nameservers:
+                    addresses:
+                      - 8.8.8.8
+                ens3:
+                  dhcp4: false
+                ens4:
+                  dhcp4: false
+              bonds:
+                bond0:
+                  interfaces:
+                    - ens3
+                    - ens4
+                  parameters:
+                    mode: 802.3ad
+                    lacp-rate: fast
+                    mii-monitor-interval: 100
+              vlans:
+                vlan.11:
+                  id: 11
+                  link: bond0
+                  addresses:
+                    - 192.168.11.3/24
+                  routes:
+                    - to: 192.168.0.0/16
+                      via: 192.168.11.1
+                      metric: 3
+      runcmd:
+       - ethtool -s ens3 autoneg off speed 1000 duplex full
+       - ethtool -s ens4 autoneg off speed 1000 duplex full
+       - netplan apply
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n15
+    image_definition: null
+    label: ' V1-N1-H2'
+    node_definition: ubuntu
+    ram: null
+    tags: []
+    x: -2400
+    y: 560
+    interfaces:
+      - id: i0
+        label: ens2
+        slot: 0
+        type: physical
+      - id: i1
+        label: ens3
+        slot: 1
+        type: physical
+      - id: i2
+        label: ens4
+        slot: 2
+        type: physical
+      - id: i3
+        label: ens5
+        slot: 3
+        type: physical
+      - id: i4
+        label: ens6
+        slot: 4
+        type: physical
+  - boot_disk_size: null
+    configuration: |-
+      #cloud-config
+      hostname: v2-n1-h1
+      manage_etc_hosts: True
+      system_info:
+        default_user:
+          name: cisco
+      password: cisco
+      chpasswd: { expire: False }
+      ssh_pwauth: True
+      ssh_authorized_keys:
+         - your-ssh-pubkey-line-goes-here
+      write_files:a
+        - path: /etc/netplan/50-cloud-init.yaml
+          append: false
+          content: |
+            network:
+              version: 2
+              ethernets:
+                ens2:
+                  dhcp4: false
+                  addresses:
+                    - 198.18.101.14/24
+                  gateway4: 198.18.101.1
+                  nameservers:
+                    addresses:
+                      - 8.8.8.8
+                ens3:
+                  dhcp4: false
+                ens4:
+                  dhcp4: false
+              bonds:
+                bond0:
+                  interfaces:
+                    - ens3
+                    - ens4
+                  parameters:
+                    mode: 802.3ad
+                    lacp-rate: fast
+                    mii-monitor-interval: 100
+              vlans:
+                vlan.13:
+                  id: 13
+                  link: bond0
+                  addresses:
+                    - 192.168.13.2/24
+                  routes:
+                    - to: 192.168.0.0/16
+                      via: 192.168.13.1
+                      metric: 3
+      runcmd:
+       - ethtool -s ens3 autoneg off speed 1000 duplex full
+       - ethtool -s ens4 autoneg off speed 1000 duplex full
+       - netplan apply
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n16
+    image_definition: null
+    label: ' V2-N1-H1'
+    node_definition: ubuntu
+    ram: null
+    tags: []
+    x: -2280
+    y: 560
+    interfaces:
+      - id: i0
+        label: ens2
+        slot: 0
+        type: physical
+      - id: i1
+        label: ens3
+        slot: 1
+        type: physical
+      - id: i2
+        label: ens4
+        slot: 2
+        type: physical
+      - id: i3
+        label: ens5
+        slot: 3
+        type: physical
+      - id: i4
+        label: ens6
+        slot: 4
+        type: physical
+  - boot_disk_size: null
+    configuration: |-
+      #cloud-config
+      hostname: v1-n2-h2
+      manage_etc_hosts: True
+      system_info:
+        default_user:
+          name: cisco
+      password: cisco
+      chpasswd: { expire: False }
+      ssh_pwauth: True
+      ssh_authorized_keys:
+         - your-ssh-pubkey-line-goes-here
+      write_files:a
+        - path: /etc/netplan/50-cloud-init.yaml
+          append: false
+          content: |
+            network:
+              version: 2
+              ethernets:
+                ens2:
+                  dhcp4: false
+                  addresses:
+                    - 198.18.102.12/24
+                  gateway4: 198.18.102.1
+                  nameservers:
+                    addresses:
+                      - 8.8.8.8
+                ens3:
+                  dhcp4: false
+                ens4:
+                  dhcp4: false
+              bonds:
+                bond0:
+                  interfaces:
+                    - ens3
+                    - ens4
+                  parameters:
+                    mode: 802.3ad
+                    lacp-rate: fast
+                    mii-monitor-interval: 100
+              vlans:
+                vlan.12:
+                  id: 12
+                  link: bond0
+                  addresses:
+                    - 192.168.12.3/24
+                  routes:
+                    - to: 192.168.0.0/16
+                      via: 192.168.12.1
+                      metric: 3
+      runcmd:
+       - ethtool -s ens3 autoneg off speed 1000 duplex full
+       - ethtool -s ens4 autoneg off speed 1000 duplex full
+       - netplan apply
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n17
+    image_definition: null
+    label: ' V1-N2-H2'
+    node_definition: ubuntu
+    ram: null
+    tags: []
+    x: -1800
+    y: 560
+    interfaces:
+      - id: i0
+        label: ens2
+        slot: 0
+        type: physical
+      - id: i1
+        label: ens3
+        slot: 1
+        type: physical
+      - id: i2
+        label: ens4
+        slot: 2
+        type: physical
+      - id: i3
+        label: ens5
+        slot: 3
+        type: physical
+      - id: i4
+        label: ens6
+        slot: 4
+        type: physical
+  - boot_disk_size: null
+    configuration: |-
+      #cloud-config
+      hostname: v2-n1-h2
+      manage_etc_hosts: True
+      system_info:
+        default_user:
+          name: cisco
+      password: cisco
+      chpasswd: { expire: False }
+      ssh_pwauth: True
+      ssh_authorized_keys:
+         - your-ssh-pubkey-line-goes-here
+      write_files:a
+        - path: /etc/netplan/50-cloud-init.yaml
+          append: false
+          content: |
+            network:
+              version: 2
+              ethernets:
+                ens2:
+                  dhcp4: false
+                  addresses:
+                    - 198.18.102.13/24
+                  gateway4: 198.18.102.1
+                  nameservers:
+                    addresses:
+                      - 8.8.8.8
+                ens3:
+                  dhcp4: false
+                ens4:
+                  dhcp4: false
+              bonds:
+                bond0:
+                  interfaces:
+                    - ens3
+                    - ens4
+                  parameters:
+                    mode: 802.3ad
+                    lacp-rate: fast
+                    mii-monitor-interval: 100
+              vlans:
+                vlan.13:
+                  id: 13
+                  link: bond0
+                  addresses:
+                    - 192.168.13.3/24
+                  routes:
+                    - to: 192.168.0.0/16
+                      via: 192.168.13.1
+                      metric: 3
+      runcmd:
+       - ethtool -s ens3 autoneg off speed 1000 duplex full
+       - ethtool -s ens4 autoneg off speed 1000 duplex full
+       - netplan apply
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n18
+    image_definition: null
+    label: ' V2-N1-H2'
+    node_definition: ubuntu
+    ram: null
+    tags: []
+    x: -1680
+    y: 560
+    interfaces:
+      - id: i0
+        label: ens2
+        slot: 0
+        type: physical
+      - id: i1
+        label: ens3
+        slot: 1
+        type: physical
+      - id: i2
+        label: ens4
+        slot: 2
+        type: physical
+      - id: i3
+        label: ens5
+        slot: 3
+        type: physical
+      - id: i4
+        label: ens6
+        slot: 4
+        type: physical
+annotations: []
